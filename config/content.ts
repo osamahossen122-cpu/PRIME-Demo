@@ -13,7 +13,7 @@ export const primeContent = {
     ar: "برايم جي إم بي إتش",
   },
   title: {
-    en: "Building Better. Securing Smarter.",
+    en: "Everything in one hand.",
     de: "Alles aus einer Hand.",
     ar: "كل شيء بيد واحدة.",
   },

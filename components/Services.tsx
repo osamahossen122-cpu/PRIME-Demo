@@ -5,7 +5,6 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { getBranchConfig, resolveLocaleValue } from "@/config/site";
 import type { BranchKey } from "@/config/types";
 import Reveal from "@/components/Reveal";
-import SectionCaption from "@/components/SectionCaption";
 
 type ServicesProps = {
   branch: BranchKey;
@@ -33,8 +32,7 @@ export default function Services({ branch, limit, showHeading = true }: Services
       <div className="container-narrow">
         {showHeading ? (
           <Reveal className="mb-14 max-w-3xl sm:mb-20" as="section">
-            <SectionCaption label="Index" className="mb-5" />
-            <h2 className="mt-6 text-balance text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-6xl">
+            <h2 className="text-balance text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-6xl">
               {t.nav.services}
             </h2>
             <p className="mt-5 max-w-xl text-base leading-7 sm:text-lg" style={{ color: "var(--color-muted)" }}>
