@@ -13,15 +13,15 @@ type BrandLogoProps = {
 
 const logoMap: Record<BrandLogoVariant, { src: string; alt: string }> = {
   prime: {
-    src: "/images/logo-prime.svg",
+    src: "/HOME-LOGO.png",
     alt: "Prime GMBH",
   },
   renovation: {
-    src: "/images/logo-bau.svg",
+    src: "/LOGO-BAU.png",
     alt: "Prime BAU",
   },
   security: {
-    src: "/images/logo-sec.svg",
+    src: "/LOGO-SEC.png",
     alt: "Prime SEC",
   },
 };
