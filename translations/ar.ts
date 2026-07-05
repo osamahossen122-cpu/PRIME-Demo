@@ -28,6 +28,7 @@ export const ar = {
     selectService: "اختر الخدمة",
     backToServices: "العودة إلى الخدمات",
     exploreServices: "استكشف الخدمات",
+    viewAllServices: "عرض جميع الخدمات",
     bookNow: "احجز الآن",
     getInTouch: "تواصل معنا",
     office: "المكتب",

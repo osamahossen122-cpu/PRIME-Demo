@@ -5,5 +5,5 @@ import { getBranchConfig } from "@/config/site";
 export const metadata = buildMetadata(getBranchConfig("renovation").seo.home);
 
 export default function RenovationHomePage() {
-  return <BranchHomePage branch="renovation" serviceLimit={3} />;
+  return <BranchHomePage branch="renovation" serviceLimit={5} />;
 }

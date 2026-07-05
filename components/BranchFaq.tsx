@@ -38,7 +38,7 @@ export default function BranchFaq({ branch }: BranchFaqProps) {
     <section className="px-4 py-24 sm:px-6 sm:py-32">
       <div className="container-narrow">
         <Reveal className="mb-12 max-w-2xl sm:mb-16" as="section">
-          <SectionCaption number="§ 06" label="FAQ" className="mb-5" />
+          <SectionCaption label="FAQ" className="mb-5" />
           <h2 className="text-balance text-[clamp(1.875rem,4vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.015em] sm:text-6xl">
             Frequently Asked Questions
           </h2>

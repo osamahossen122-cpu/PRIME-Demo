@@ -93,23 +93,36 @@ function ContactCell({ icon, eyebrow, body, href }: ContactCellProps) {
   );
 }
 
+const heroImages: Record<BranchKey, { src: string; overlay: string }> = {
+  renovation: {
+    src: "/images/home/renovation-branch-hero.png",
+    overlay: "linear-gradient(180deg, rgba(18,12,8,0.35) 0%, rgba(18,12,8,0.55) 50%, rgba(18,12,8,0.85) 100%)",
+  },
+  security: {
+    src: "/images/home/security-branch-hero.png",
+    overlay: "linear-gradient(180deg, rgba(5,11,19,0.30) 0%, rgba(5,11,19,0.50) 50%, rgba(5,11,19,0.85) 100%)",
+  },
+};
+
 function HeroSection({ branch }: { branch: BranchKey }) {
   const { locale, t } = useLanguage();
   const branchConfig = getBranchConfig(branch);
   const home = branchConfig.home;
+  const hero = heroImages[branch];
 
   const phoneHref = `tel:${branchConfig.phone.replace(/\s+/g, "")}`;
   const emailHref = `mailto:${branchConfig.email}`;
 
   return (
-    <section className="px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:pb-28 lg:pt-20">
-      <div className="container-narrow">
+    <section className="relative overflow-hidden px-4 sm:px-6">
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out"
+        style={{ backgroundImage: `url(${hero.src})` }}
+      />
+      <div className="absolute inset-0" style={{ background: hero.overlay }} />
+      <div className="container-narrow relative z-10 flex min-h-[28rem] flex-col items-center justify-start pt-28 pb-20 text-center sm:min-h-[34rem] sm:pt-32 lg:min-h-[40rem] lg:pt-36">
         <Reveal>
           <div className="flex items-baseline gap-3">
-            <span className="font-mono text-xs uppercase tracking-[0.22em]" style={{ color: "var(--color-muted)" }}>
-              § 01
-            </span>
-            <span className="h-px w-8" style={{ background: "var(--color-border)" }} />
             <span className="font-mono text-xs uppercase tracking-[0.22em]" style={{ color: "var(--color-muted)" }}>
               {branchConfig.shortName} — {branchConfig.serviceAreas[0]}
             </span>
@@ -117,7 +130,7 @@ function HeroSection({ branch }: { branch: BranchKey }) {
         </Reveal>
 
         <Reveal delay={100}>
-          <h1 className="mt-6 text-balance text-[clamp(2.5rem,8vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.025em]">
+          <h1 className="mx-auto mt-4 max-w-[28ch] whitespace-pre-line text-balance text-[clamp(1.75rem,5vw,3.5rem)] font-semibold leading-[1.1] tracking-[-0.03em] text-white sm:mt-5 sm:max-w-[30ch]">
             {resolveLocaleValue(home.title, locale)}
           </h1>
         </Reveal>
@@ -152,7 +165,7 @@ function MapSection({ branch }: { branch: BranchKey }) {
     <section className="px-4 py-24 sm:px-6 sm:py-32">
       <div className="container-narrow">
         <Reveal className="mb-8 max-w-2xl" as="section">
-          <SectionCaption number="§ 07" label="Find us" className="mb-5" />
+          <SectionCaption label="Find us" className="mb-5" />
           <h2 className="text-balance text-[clamp(1.875rem,4vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.015em] sm:text-6xl">
             {branchConfig.name}
           </h2>
@@ -207,7 +220,11 @@ export default function BranchHomePage({ branch, serviceLimit }: BranchHomePageP
         if (!SectionComponent) return null;
         return (
           <div key={sectionKey}>
-            <SectionComponent branch={branch} />
+            {sectionKey === "services" ? (
+              <Services branch={branch} limit={serviceLimit} />
+            ) : (
+              <SectionComponent branch={branch} />
+            )}
           </div>
         );
       })}

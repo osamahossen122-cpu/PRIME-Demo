@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <defs>
+    <clipPath id="mark-clip">
+      <path d="M200 20 L360 110 L360 280 L200 370 L40 280 L40 110 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer hexagon - dark navy -->
+  <path d="M200 20 L360 110 L360 280 L200 370 L40 280 L40 110 Z" fill="#1A2744"/>
+
+  <!-- Left P - medium blue -->
+  <path d="M200 20 L40 110 L40 280 L200 370 L200 200 L120 160 L120 130 L200 90 Z" fill="#2B5EA7"/>
+
+  <!-- Left P - light gray/silver inner -->
+  <path d="M200 200 L200 370 L120 320 L120 230 Z" fill="#B8C4D0"/>
+
+  <!-- Left P - dark navy cutout for P hole -->
+  <path d="M160 150 L200 170 L200 230 L160 210 Z" fill="#1A2744"/>
+
+  <!-- Right B - bright blue -->
+  <path d="M200 20 L360 110 L360 280 L200 370 L200 200 L280 160 L280 130 L200 90 Z" fill="#2979C1"/>
+
+  <!-- Right B - dark navy B holes -->
+  <path d="M240 150 L280 130 L280 170 L240 190 Z" fill="#1A2744"/>
+  <path d="M240 220 L280 200 L280 260 L240 280 Z" fill="#1A2744"/>
+
+  <!-- Center white/light line -->
+  <path d="M200 90 L200 370" stroke="white" stroke-width="2" opacity="0.6"/>
+
+  <!-- PRIME text -->
+  <text x="200" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="62" fill="#1A2744" letter-spacing="8">PRIME</text>
+
+  <!-- GMBH text -->
+  <text x="200" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="24" fill="#8896A6" letter-spacing="12">GMBH</text>
+
+  <!-- Left line -->
+  <line x1="80" y1="465" x2="155" y2="465" stroke="#8896A6" stroke-width="1.5"/>
+
+  <!-- Right line -->
+  <line x1="245" y1="465" x2="320" y2="465" stroke="#8896A6" stroke-width="1.5"/>
+</svg>

@@ -18,7 +18,7 @@ export default function BranchWhyUs({ branch }: { branch: BranchKey }) {
     <section id="why-us" className="px-4 py-24 sm:px-6 sm:py-32">
       <div className="container-narrow">
         <Reveal className="mb-14 max-w-3xl sm:mb-20" as="section">
-          <SectionCaption number="§ 05" label={resolveLocaleValue(whyUs.eyebrow, locale)} className="mb-5" />
+          <SectionCaption label={resolveLocaleValue(whyUs.eyebrow, locale)} className="mb-5" />
           <h2 className="mt-6 text-balance text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-6xl">
             {resolveLocaleValue(whyUs.title, locale)}
           </h2>

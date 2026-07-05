@@ -6,6 +6,7 @@ import Link from "next/link";
 import BranchHtmlController from "@/components/BranchHtmlController";
 import BrandLogo from "@/components/BrandLogo";
 import BranchSelector from "@/components/BranchSelector";
+import FeaturedServices from "@/components/FeaturedServices";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { useLanguage } from "@/components/LanguageProvider";
 import { getBranchConfig, resolveLocaleValue, siteConfig } from "@/config/site";
@@ -152,6 +153,7 @@ export default function PrimeLanding() {
         </div>
 
         <BranchSelector />
+        <FeaturedServices />
       </main>
 
     </div>

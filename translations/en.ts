@@ -28,6 +28,7 @@ export const en = {
     selectService: "Select service",
     backToServices: "Back to services",
     exploreServices: "Explore services",
+    viewAllServices: "View All Services",
     bookNow: "Book now",
     getInTouch: "Get in touch",
     office: "Office",

@@ -16,7 +16,7 @@ export default function BranchIntro({ branch }: { branch: BranchKey }) {
       <div className="container-narrow">
         <div className="max-w-3xl">
           <Reveal className="max-w-3xl">
-            <SectionCaption number="§ 02" label={resolveLocaleValue(intro.eyebrow, locale)} className="mb-5" />
+            <SectionCaption label={resolveLocaleValue(intro.eyebrow, locale)} className="mb-5" />
             <h2 className="mt-6 text-balance text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-6xl">
               {resolveLocaleValue(intro.title, locale)}
             </h2>

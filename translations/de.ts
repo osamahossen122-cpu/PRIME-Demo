@@ -28,6 +28,7 @@ export const de = {
     selectService: "Service auswählen",
     backToServices: "Zurück zu den Services",
     exploreServices: "Services ansehen",
+    viewAllServices: "Alle Services ansehen",
     bookNow: "Jetzt anfragen",
     getInTouch: "Kontakt aufnehmen",
     office: "Standort",
