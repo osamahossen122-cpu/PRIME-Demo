@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { BranchKey } from "@/config/types";
 
 type BrandLogoVariant = "prime" | BranchKey;
@@ -13,39 +12,36 @@ type BrandLogoProps = {
 
 const logoMap: Record<BrandLogoVariant, { src: string; alt: string }> = {
   prime: {
-    src: "/HOME-LOGO.png",
+    src: "/images/logo-prime.svg",
     alt: "Prime GMBH",
   },
   renovation: {
-    src: "/LOGO-BAU.png",
+    src: "/images/logo-bau.svg",
     alt: "Prime BAU",
   },
   security: {
-    src: "/LOGO-SEC.png",
+    src: "/images/logo-sec.svg",
     alt: "Prime SEC",
   },
 };
 
 const sizeClasses: Record<BrandLogoSize, string> = {
-  homeNav: "h-12 w-auto sm:h-14 lg:h-16",
-  branchNav: "h-12 w-auto sm:h-14 lg:h-16",
-  footer: "h-24 w-auto sm:h-28",
-  section: "h-7 w-auto sm:h-8",
+  homeNav: "h-12 sm:h-14 lg:h-16 w-auto",
+  branchNav: "h-12 sm:h-14 lg:h-16 w-auto",
+  footer: "h-24 sm:h-28 w-auto",
+  section: "h-7 sm:h-8 w-auto",
 };
 
 export default function BrandLogo({ variant, size = "homeNav", priority = false, className = "" }: BrandLogoProps) {
   const logo = logoMap[variant];
 
   return (
-    <span className={`relative block shrink-0 ${sizeClasses[size]} ${className}`.trim()}>
-      <Image
-        fill
+    <span className={`block shrink-0 ${sizeClasses[size]} ${className}`.trim()}>
+      <img
         src={logo.src}
         alt={logo.alt}
-        priority={priority}
-        quality={100}
-        sizes="(max-width: 640px) 48px, (max-width: 1024px) 56px, 64px"
-        className="object-contain object-left"
+        className="h-full w-auto"
+        loading={priority ? "eager" : "lazy"}
       />
     </span>
   );
