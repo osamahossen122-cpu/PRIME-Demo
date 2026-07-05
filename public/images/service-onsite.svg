@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="acc2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ed8936;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dd6b20;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  <circle cx="400" cy="300" r="120" fill="url(#acc2)" opacity="0.2"/>
+  <rect x="340" y="240" width="120" height="120" rx="12" fill="none" stroke="#ed8936" stroke-width="4" opacity="0.6"/>
+  <path d="M 380 280 L 420 280 M 400 260 L 400 300" stroke="#ed8936" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <text x="400" y="450" font-family="system-ui, sans-serif" font-size="24" fill="#a0aec0" text-anchor="middle">On-Site Service</text>
+</svg>

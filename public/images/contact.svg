@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 860">
+  <defs>
+    <linearGradient id="contactBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="contactAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48bb78;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38a169;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="860" fill="url(#contactBg)"/>
+  <circle cx="400" cy="350" r="180" fill="url(#contactAcc)" opacity="0.15"/>
+  <rect x="320" y="280" width="160" height="140" rx="12" fill="none" stroke="#48bb78" stroke-width="5" opacity="0.5"/>
+  <path d="M 360 340 L 440 340 M 400 300 L 400 380" stroke="#48bb78" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="400" cy="350" r="25" fill="#48bb78" opacity="0.3"/>
+  <text x="400" y="550" font-family="system-ui, sans-serif" font-size="32" fill="#a0aec0" text-anchor="middle">Contact Us</text>
+  <text x="400" y="600" font-family="system-ui, sans-serif" font-size="18" fill="#718096" text-anchor="middle">We're here to help</text>
+</svg>
