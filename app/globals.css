@@ -167,6 +167,17 @@ img {
   height: auto;
 }
 
+/* Brand logo theme toggle: light uses multiply, dark uses invert+screen */
+.logo-dark {
+  display: none;
+}
+[data-branch-mode="dark"] .logo-light {
+  display: none;
+}
+[data-branch-mode="dark"] .logo-dark {
+  display: block;
+}
+
 button,
 a,
 input,

@@ -85,7 +85,7 @@ export default function PrimeLanding() {
 
   return (
     <div data-branch="prime" className="min-h-screen bg-[var(--page-bg)] text-[var(--theme-text)]" style={pageTheme}>
-      <BranchHtmlController branch="prime" />
+      <BranchHtmlController branch="prime" mode={mode as PrimeMode} />
 
       <header dir="ltr" className="fixed inset-x-0 top-0 z-30 border-b px-2 sm:px-3" style={{ borderColor: "var(--theme-border)", background: "var(--page-bg)" }}>
         <div
