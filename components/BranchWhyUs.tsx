@@ -15,7 +15,7 @@ export default function BranchWhyUs({ branch }: { branch: BranchKey }) {
   const supportingBullets = allBullets.slice(3);
 
   return (
-    <section id="why-us" className="px-4 py-24 sm:px-6 sm:py-32">
+    <section id="why-us" className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="mb-14 max-w-3xl sm:mb-20" as="section">
           <SectionCaption label={resolveLocaleValue(whyUs.eyebrow, locale)} className="mb-5" />

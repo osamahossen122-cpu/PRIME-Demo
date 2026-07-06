@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 type MapEmbedProps = {
   src: string;
@@ -17,6 +18,7 @@ function ArrowUpRight({ className = "" }: { className?: string }) {
 
 export default function MapEmbed({ src, title }: MapEmbedProps) {
   const [loaded, setLoaded] = useState(false);
+  const { t } = useLanguage();
 
   if (loaded) {
     return (
@@ -37,13 +39,13 @@ export default function MapEmbed({ src, title }: MapEmbedProps) {
       onClick={() => setLoaded(true)}
       style={{ background: "var(--color-card-background)" }}
     >
-      <span className="eyebrow">Interactive map</span>
+      <span className="eyebrow">{t.common.interactiveMap}</span>
       <span className="mt-1 text-[15px] font-medium">{title}</span>
       <span className="text-xs" style={{ color: "var(--color-muted)" }}>
-        Click to load the map
+        {t.common.clickToLoadMap}
       </span>
       <span className="mt-3 inline-flex items-center gap-2 text-sm font-medium" style={{ color: "var(--theme-text)" }}>
-        <span>Open</span>
+        <span>{t.common.openMap}</span>
         <ArrowUpRight className="btn-island h-4 w-4" />
       </span>
     </button>

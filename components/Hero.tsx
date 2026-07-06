@@ -28,33 +28,6 @@ export default function Hero({ branch }: HeroProps) {
           <p className="mt-6 max-w-2xl text-lg leading-8" style={{ color: "var(--muted-text)" }}>
             {resolveLocaleValue(home.subtitle, locale)}
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href={`${branchConfig.path}/book`}
-              className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold"
-              style={{ background: "var(--accent)", color: "var(--accent-foreground)" }}
-            >
-              {resolveLocaleValue(home.primaryCta, locale)}
-            </Link>
-            <Link
-              href={`${branchConfig.path}/services`}
-              className="inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-semibold"
-              style={{ borderColor: "var(--theme-border)" }}
-            >
-              {resolveLocaleValue(home.secondaryCta, locale)}
-            </Link>
-          </div>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {stats.map((item) => (
-            <div key={item.label} className="rounded-[28px] border p-6" style={{ borderColor: "var(--theme-border)", background: "var(--surface)" }}>
-              <p className="text-3xl font-semibold">{item.value}</p>
-              <p className="mt-2 text-sm leading-6" style={{ color: "var(--muted-text)" }}>
-                {item.label}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

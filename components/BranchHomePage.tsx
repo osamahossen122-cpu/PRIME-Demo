@@ -147,9 +147,12 @@ function HeroSection({ branch }: { branch: BranchKey }) {
               <span>{resolveLocaleValue(home.primaryCta, locale)}</span>
               <ArrowUpRight className="btn-island h-4 w-4" />
             </Link>
-            <Link href={`${branchConfig.path}/services`} className="group btn btn-ghost btn-lg">
+            <Link
+              href={`${branchConfig.path}/services`}
+              className="group btn btn-lg border border-white/30 bg-white/10 text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+            >
               <span>{resolveLocaleValue(home.secondaryCta, locale)}</span>
-              <ArrowUpRight className="btn-island h-4 w-4" />
+              <ArrowUpRight className="btn-island h-4 w-4 bg-white/20 text-white" />
             </Link>
           </div>
         </Reveal>
@@ -159,13 +162,14 @@ function HeroSection({ branch }: { branch: BranchKey }) {
 }
 
 function MapSection({ branch }: { branch: BranchKey }) {
+  const { t } = useLanguage();
   const branchConfig = getBranchConfig(branch);
 
   return (
-    <section className="px-4 py-24 sm:px-6 sm:py-32">
+    <section className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="mb-8 max-w-2xl" as="section">
-          <SectionCaption label="Find us" className="mb-5" />
+          <SectionCaption label={t.common.findUs} className="mb-5" />
           <h2 className="text-balance text-[clamp(1.875rem,4vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.015em] sm:text-6xl">
             {branchConfig.name}
           </h2>

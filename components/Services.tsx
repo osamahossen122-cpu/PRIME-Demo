@@ -28,16 +28,18 @@ export default function Services({ branch, limit, showHeading = true }: Services
   if (services.length === 0) return null;
 
   return (
-    <section id="services" className="px-4 py-24 sm:px-6 sm:py-32">
+    <section id="services" className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         {showHeading ? (
-          <Reveal className="mb-14 max-w-3xl sm:mb-20" as="section">
+          <Reveal className="mb-12 sm:mb-16" as="section">
             <h2 className="text-balance text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-6xl">
               {t.nav.services}
             </h2>
-            <p className="mt-5 max-w-xl text-base leading-7 sm:text-lg" style={{ color: "var(--color-muted)" }}>
-              {resolveLocaleValue(branchConfig.home.featuresDescription, locale)}
-            </p>
+            {resolveLocaleValue(branchConfig.home.featuresDescription, locale) ? (
+              <p className="mt-5 max-w-xl text-base leading-7 sm:text-lg" style={{ color: "var(--color-muted)" }}>
+                {resolveLocaleValue(branchConfig.home.featuresDescription, locale)}
+              </p>
+            ) : null}
           </Reveal>
         ) : null}
 

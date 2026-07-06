@@ -37,11 +37,6 @@ export const primeContent = {
     de: "Wählen Sie den passenden Fachbereich.",
     ar: "اختر الفرع المتخصص المناسب.",
   },
-  selectorDescription: {
-    en: "Each branch has its own voice, navigation, pages, and booking flow while staying under the Prime GMBH umbrella.",
-    de: "Jeder Bereich erhält eine eigene Sprache, Navigation, Seiten und einen eigenen Buchungsablauf – bleibt aber unter dem Dach von Prime GMBH.",
-    ar: "لكل فرع صوته الخاص وتصفحه وصفحاته ونموذج حجزه، مع بقائه تحت مظلة برايم جي إم بي إتش.",
-  },
   trustPoints: {
     en: [
       "Two specialist branches with one responsible company.",

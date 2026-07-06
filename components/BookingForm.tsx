@@ -96,7 +96,7 @@ export default function BookingForm({ branch, initialService: requestedService }
   };
 
   return (
-    <section className="px-4 py-16 sm:px-6 lg:py-24">
+    <section className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.82fr_1.18fr]">
         <div className="rounded-[28px] border p-7" style={{ borderColor: "var(--theme-border)", background: "var(--surface)" }}>
           <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--muted-text)" }}>

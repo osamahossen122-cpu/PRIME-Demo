@@ -19,19 +19,19 @@ function QuoteIcon({ className = "" }: { className?: string }) {
 }
 
 export default function BranchTestimonials({ branch }: BranchTestimonialsProps) {
-  const { locale } = useLanguage();
+  const { locale, t } = useLanguage();
   const branchConfig = getBranchConfig(branch);
   const items = branchConfig.testimonials;
 
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="px-4 py-24 sm:px-6 sm:py-32">
+    <section className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="mb-12 max-w-2xl sm:mb-16" as="section">
-          <SectionCaption label="Testimonials" className="mb-5" />
+          <SectionCaption label={t.common.testimonials} className="mb-5" />
           <h2 className="text-balance text-[clamp(1.875rem,4vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.015em] sm:text-6xl">
-            What Our Clients Say
+            {t.common.whatOurClientsSay}
           </h2>
         </Reveal>
 

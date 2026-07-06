@@ -198,7 +198,6 @@ export type PrimeHomeContent = {
   primaryCta: LocalizedText;
   secondaryCta: LocalizedText;
   selectorTitle: LocalizedText;
-  selectorDescription: LocalizedText;
   trustPoints: LocalizedList;
   cards: Record<
     BranchKey,

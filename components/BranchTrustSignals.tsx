@@ -51,7 +51,7 @@ export default function BranchTrustSignals({ branch }: { branch: BranchKey }) {
   const items = resolveLocaleValue(trustSignals.items, locale);
 
   return (
-    <section id="trust" className="px-4 py-24 sm:px-6 sm:py-32">
+    <section id="trust" className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="mb-14 max-w-3xl sm:mb-20" as="section">
           <SectionCaption label={resolveLocaleValue(trustSignals.eyebrow, locale)} className="mb-5" />

@@ -21,7 +21,7 @@ export default function BranchWhyUsPreview({ branch }: { branch: BranchKey }) {
   const bullets = resolveLocaleValue(whyUs.bullets, locale).slice(0, 3);
 
   return (
-    <section className="px-4 py-24 sm:px-6 sm:py-32">
+    <section className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="max-w-3xl" as="section">
           <p className="eyebrow mb-5">{resolveLocaleValue(whyUs.eyebrow, locale)}</p>

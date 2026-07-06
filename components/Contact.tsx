@@ -63,7 +63,7 @@ export default function Contact({ branch, showMap = false }: ContactProps) {
   const emailHref = `mailto:${branchConfig.email}`;
 
   return (
-    <section id="contact" className="px-4 py-24 sm:px-6 sm:py-32">
+    <section id="contact" className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="mb-12 sm:mb-16" as="section">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
@@ -88,7 +88,7 @@ export default function Contact({ branch, showMap = false }: ContactProps) {
                 <div className="min-w-0 flex-1">
                   <div className="eyebrow mb-3 flex items-center gap-2">
                     <PhoneIcon className="h-3.5 w-3.5" />
-                    <span>Direct line</span>
+                    <span>{t.common.call}</span>
                   </div>
                   <p className="text-balance text-[clamp(2rem,6.5vw,4.25rem)] font-semibold leading-[0.98] tracking-[-0.025em]">
                     {branchConfig.phone}
@@ -112,7 +112,7 @@ export default function Contact({ branch, showMap = false }: ContactProps) {
                 <MailIcon className="h-4 w-4" />
               </span>
               <div className="min-w-0 flex-1">
-                <p className="eyebrow mb-1">Email</p>
+                <p className="eyebrow mb-1">{t.common.email}</p>
                 <p className="break-all text-[15px] font-medium sm:text-base">{branchConfig.email}</p>
               </div>
               <ArrowUpRight className="mt-1 h-4 w-4 opacity-0 transition-opacity duration-200 ease-vanguard group-hover:opacity-100" />
@@ -125,7 +125,7 @@ export default function Contact({ branch, showMap = false }: ContactProps) {
                 <ClockIcon className="h-4 w-4" />
               </span>
               <div className="min-w-0 flex-1">
-                <p className="eyebrow mb-1">Working hours</p>
+                <p className="eyebrow mb-1">{t.common.hours}</p>
                 <p className="text-[15px] font-medium sm:text-base">{branchConfig.hours}</p>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function Contact({ branch, showMap = false }: ContactProps) {
                 <PinIcon className="h-4 w-4" />
               </span>
               <div className="min-w-0 flex-1">
-                <p className="eyebrow mb-1">Service area</p>
+                <p className="eyebrow mb-1">{t.common.serviceAreas}</p>
                 <p className="text-[15px] font-medium sm:text-base">{branchConfig.address}</p>
               </div>
             </div>

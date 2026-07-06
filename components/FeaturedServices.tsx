@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
-import { getBranchConfig, resolveLocaleValue, branchOrder, siteConfig } from "@/config/site";
+import { getBranchConfig, resolveLocaleValue, branchOrder } from "@/config/site";
 import type { BranchKey } from "@/config/types";
 import Reveal from "@/components/Reveal";
 import SectionCaption from "@/components/SectionCaption";
@@ -32,16 +32,13 @@ export default function FeaturedServices() {
   if (featuredServices.length === 0) return null;
 
   return (
-    <section className="px-4 py-24 sm:px-6 sm:py-32" style={{ background: "var(--page-bg)" }}>
+    <section className="px-4 py-20 sm:px-6 sm:py-24" style={{ background: "var(--page-bg)" }}>
       <div className="container-narrow">
         <Reveal className="mb-14 max-w-3xl sm:mb-20" as="section">
-          <SectionCaption label="Index" className="mb-5" />
+          <SectionCaption label={t.common.features} className="mb-5" />
           <h2 className="mt-6 text-balance text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-6xl">
             {t.nav.services}
           </h2>
-          <p className="mt-5 max-w-xl text-base leading-7 sm:text-lg" style={{ color: "var(--muted-text)" }}>
-            {resolveLocaleValue(siteConfig.home.selectorDescription, locale)}
-          </p>
         </Reveal>
 
         <div className="grid grid-cols-12 gap-3 sm:gap-4">

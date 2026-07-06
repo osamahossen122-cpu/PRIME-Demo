@@ -28,19 +28,19 @@ function MinusIcon({ className = "" }: { className?: string }) {
 }
 
 export default function BranchFaq({ branch }: BranchFaqProps) {
-  const { locale } = useLanguage();
+  const { locale, t } = useLanguage();
   const branchConfig = getBranchConfig(branch);
   const faqItems = branchConfig.faq;
 
   if (!faqItems || faqItems.length === 0) return null;
 
   return (
-    <section className="px-4 py-24 sm:px-6 sm:py-32">
+    <section className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="container-narrow">
         <Reveal className="mb-12 max-w-2xl sm:mb-16" as="section">
-          <SectionCaption label="FAQ" className="mb-5" />
+          <SectionCaption label={t.common.faq} className="mb-5" />
           <h2 className="text-balance text-[clamp(1.875rem,4vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.015em] sm:text-6xl">
-            Frequently Asked Questions
+            {t.common.frequentlyAskedQuestions}
           </h2>
         </Reveal>
 

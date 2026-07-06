@@ -152,9 +152,9 @@ export const renovationContent: Pick<BranchConfig, "id" | "name" | "shortName" |
       ar: "لماذا يبدو هذا الفرع مستقلاً",
     },
     featuresDescription: {
-      en: "The renovation branch keeps a practical tone for property owners, contractors, and site managers.",
-      de: "Der Renovierungsbereich hält einen praktischen Ton für Eigentümer, Auftragnehmer und Bauleiter.",
-      ar: "يحافظ فرع التجديد على نبرة عملية تناسب الملاك والمقاولين ومديري المواقع.",
+      en: "",
+      de: "",
+      ar: "",
     },
     features: {
       en: [
@@ -186,14 +186,14 @@ export const renovationContent: Pick<BranchConfig, "id" | "name" | "shortName" |
       ar: "أعمال التجديد تحتاج إلى تسلسل واضح ونطاق صريح وتسليم نظيف.",
     },
     description: {
-      en: "Prime Renovation is positioned for clients who need planning confidence before walls open, fixtures move, or debris starts leaving the site.",
-      de: "Prime Renovation ist für Kunden positioniert, die Planungssicherheit benötigen, bevor Wände geöffnet, Elemente versetzt oder Materialien entfernt werden.",
-      ar: "يتموضع Prime Renovation للعملاء الذين يحتاجون إلى وضوح في التخطيط قبل فتح الجدران أو نقل التجهيزات أو بدء إزالة المخلفات.",
+      en: "Prime Renovation handles renovation, maintenance, demolition, and site cleaning across Germany.",
+      de: "Prime Renovation übernimmt Renovierung, Wartung, Rückbau und Baustellenreinigung in ganz Deutschland.",
+      ar: "تتولى Prime Renovation التجديد والصيانة والهدم وتنظيف المواقع في جميع أنحاء ألمانيا.",
     },
     story: {
-      en: "The branch combines renovation, maintenance, demolition, and site cleaning into one operational story instead of scattering tasks across unrelated pages.",
-      de: "Der Bereich verbindet Renovierung, Wartung, Rückbau und Baustellenreinigung zu einer operativen Gesamterzählung statt die Aufgaben über unverbundene Seiten zu verteilen.",
-      ar: "يجمع هذا الفرع بين التجديد والصيانة والهدم وتنظيف الموقع ضمن قصة تشغيلية واحدة بدلاً من توزيعها على صفحات غير مترابطة.",
+      en: "One branch for practical property work from start to finish.",
+      de: "Ein Bereich für praktische Immobilienarbeit von Anfang bis Ende.",
+      ar: "فرع واحد للأعمال العقارية العملية من البداية إلى النهاية.",
     },
     points: {
       en: ["Scope before execution", "Clear service structure", "Practical booking for live projects"],
@@ -213,19 +213,19 @@ export const renovationContent: Pick<BranchConfig, "id" | "name" | "shortName" |
       ar: "ابدأ طلب تجديد.",
     },
     description: {
-      en: "Use the branch booking path when you need a site visit, a scope check, or a defined renovation package.",
-      de: "Nutzen Sie den Buchungsweg dieses Bereichs, wenn Sie einen Ortstermin, eine Umfangsprüfung oder ein klar definiertes Renovierungspaket benötigen.",
-      ar: "استخدم مسار الحجز الخاص بالفرع عندما تحتاج إلى زيارة موقع أو مراجعة نطاق أو حزمة تجديد محددة.",
+      en: "Request a site visit or quote through the booking form.",
+      de: "Fordern Sie einen Ortstermin oder ein Angebot über das Buchungsformular an.",
+      ar: "اطلب زيارة موقع أو عرض سعر عبر نموذج الحجز.",
     },
     responseLabel: {
-      en: "Best for",
-      de: "Geeignet für",
-      ar: "مناسب لـ",
+      en: "Services",
+      de: "Leistungen",
+      ar: "الخدمات",
     },
     responseValue: {
-      en: "Homes, bathrooms, electrical fixes, demolition prep, and final cleaning.",
-      de: "Häuser, Bäder, elektrische Instandsetzung, Rückbauvorbereitung und Endreinigung.",
-      ar: "المنازل والحمامات والإصلاحات الكهربائية وتجهيزات الهدم والتنظيف النهائي.",
+      en: "Renovation, maintenance, demolition, and site cleaning.",
+      de: "Renovierung, Wartung, Rückbau und Baustellenreinigung.",
+      ar: "التجديد والصيانة والهدم وتنظيف المواقع.",
     },
   },
   footer: {
@@ -243,38 +243,26 @@ export const renovationContent: Pick<BranchConfig, "id" | "name" | "shortName" |
   faq: [
     {
       question: {
-        en: "What renovation services do you offer?",
-        de: "Welche Renovierungsdienstleistungen bieten Sie an?",
-        ar: "ما هي خدمات التجديد التي تقدمونها؟",
+        en: "What services do you offer?",
+        de: "Welche Dienstleistungen bieten Sie an?",
+        ar: "ما هي الخدمات التي تقدمونها؟",
       },
       answer: {
-        en: "We cover full renovation, bathroom upgrades, flooring, painting, demolition, and site cleaning.",
-        de: "Wir bieten Komplettrenovierung, Badsanierung, Bodenbeläge, Malerarbeiten, Rückbau und Baustellenreinigung.",
-        ar: "نغطي التجديد الكامل وتحديثات الحمامات والأرضيات والطلاء والهدم وتنظيف الموقع.",
+        en: "Renovation, maintenance, demolition, and site cleaning.",
+        de: "Renovierung, Wartung, Rückbau und Baustellenreinigung.",
+        ar: "التجديد والصيانة والهدم وتنظيف المواقع.",
       },
     },
     {
       question: {
-        en: "How long does a typical renovation project take?",
-        de: "Wie lange dauert ein typisches Renovierungsprojekt?",
-        ar: "كم من الوقت تستغرق مشروع التجديد النموذجي؟",
+        en: "How do I request a quote?",
+        de: "Wie fordere ich ein Angebot an?",
+        ar: "كيف أطلب عرض سعر؟",
       },
       answer: {
-        en: "Timelines depend on scope. Small upgrades take 1-2 weeks, full renovations 4-8 weeks.",
-        de: "Der Zeitplan hängt vom Umfang ab. Kleine Umbauten dauern 1-2 Wochen, Komplettrenovierungen 4-8 Wochen.",
-        ar: "تعتمد الجداول على النطاق. الاستثمارات الصغيرة تستغرق 1-2 أسبوعاً، والتجديدات الكاملة 4-8 أسابيع.",
-      },
-    },
-    {
-      question: {
-        en: "Do you handle permits and planning?",
-        de: "Kümmern Sie sich um Genehmigungen und Planung?",
-        ar: "هل تتولون التصاريح والتخطيط؟",
-      },
-      answer: {
-        en: "Yes, we manage planning coordination and can advise on required permits for your project.",
-        de: "Ja, wir koordinieren die Planung und beraten Sie zu erforderlichen Genehmigungen.",
-        ar: "نعم، نتولى تنسيق التخطيط ونقدم المشورة بشأن التصاريح المطلوبة لمشروعك.",
+        en: "Use the booking form or call us directly.",
+        de: "Nutzen Sie das Buchungsformular oder rufen Sie uns direkt an.",
+        ar: "استخدم نموذج الحجز أو اتصل بنا مباشرة.",
       },
     },
   ],
@@ -454,9 +442,9 @@ export const renovationContent: Pick<BranchConfig, "id" | "name" | "shortName" |
       ar: "تجديد يتم بشكل صحيح، من البداية إلى النهاية",
     },
     body: {
-      en: "We combine renovation, maintenance, demolition, and site cleaning into one cohesive service experience.",
-      de: "Wir verbinden Renovierung, Wartung, Rückbau und Baustellenreinigung zu einem einheitlichen Serviceerlebnis.",
-      ar: "نجمع بين التجديد والصيانة والهدم وتنظيف الموقع في تجربة خدمة متماسكة.",
+      en: "Full-service renovation, maintenance, demolition, and site cleaning.",
+      de: "Komplettrenovierung, Wartung, Rückbau und Baustellenreinigung.",
+      ar: "تجديد شامل، صيانة، هدم، وتنظيف مواقع.",
     },
     bullets: {
       en: ["Full-service renovation", "Professional project management", "Clean and timely delivery"],

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={siteConfig.locales.active} suppressHydrationWarning>
+    <html lang={siteConfig.locales.active} dir={siteConfig.locales.direction[siteConfig.locales.active]} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <LanguageProvider>{children}</LanguageProvider>
       </body>
